@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Button from './Button';
 
 function Login() {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
+  const [firstNameValue, setFirstNameValue] = useState('');
+  const [lastNameValue, setLastNameValue] = useState('');
+  const [emailValue, setEmailValue] = useState('');
+  const [subjectValue, setSubjectValue] = useState('');
+  const [messageValue, setMessageValue] = useState('');
 
   const [formValid, setFormValid] = useState(false);
 
@@ -14,30 +14,30 @@ function Login() {
   //
 
   function firstnameEnterHandler(event) {
-    setFirstName(event.target.value);
+    setFirstNameValue(event.target.value);
   }
   function surnameEnterHandler(event) {
-    setLastName(event.target.value);
+    setLastNameValue(event.target.value);
   }
   function emailEnterHandler(event) {
-    setEmail(event.target.value);
+    setEmailValue(event.target.value);
   }
   function messageEnterHandler(event) {
-    setMessage(event.target.value);
+    setMessageValue(event.target.value);
   }
   function subjectEnterHandler(event) {
-    setSubject(event.target.value);
+    setSubjectValue(event.target.value);
   }
   //
 
   function sendValues(event) {
     event.preventDefault();
     const newPostOb = {
-      email: email,
-      first_name: firstName,
-      last_name: lastName,
-      avatar: message,
-      subject: subject,
+      email: emailValue,
+      first_name: firstNameValue,
+      last_name: lastNameValue,
+      avatar: messageValue,
+      subject: subjectValue,
     };
     getPosts(newPostOb);
     async function getPosts() {
@@ -61,7 +61,7 @@ function Login() {
             First Name <br />
             <input
               onChange={firstnameEnterHandler}
-              value={firstName}
+              value={firstNameValue}
               id="name"
               type="text"
             />
@@ -71,7 +71,7 @@ function Login() {
             Last Name <br />
             <input
               onChange={surnameEnterHandler}
-              value={lastName}
+              value={lastNameValue}
               id="surname"
               type="text"
             />
@@ -79,18 +79,18 @@ function Login() {
         </div>
         <label htmlFor="email">Email</label>
         <br />
-        <input onChange={emailEnterHandler} value={email} type="email" />
+        <input onChange={emailEnterHandler} value={emailValue} type="email" />
         <br />
 
         <label htmlFor="subject">Subject</label>
         <br />
-        <input onChange={subjectEnterHandler} value={subject} type="subject" />
+        <input onChange={subjectEnterHandler} value={subjectValue} type="subject" />
         <br />
         <label htmlFor="message">Message</label>
         <br />
         <textarea
           onChange={messageEnterHandler}
-          value={message}
+          value={messageValue}
           name=""
           id=""
           cols="30"
