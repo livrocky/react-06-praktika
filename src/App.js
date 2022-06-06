@@ -7,7 +7,7 @@ function App() {
   return (
     <div className='App'>
       <main>
-        <SectionTitle title='OUR SERVICES' subtitle='The best services in the world' />
+        <SectionTitle />
         <ServiceCard />
       </main>
     </div>
