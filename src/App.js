@@ -8,7 +8,6 @@ function App() {
     <div className='App'>
       <main>
         <SectionTitle title='OUR SERVICES' subtitle='The best services in the world' />
-        {/* <Icon icon='fa-plane' /> */}
         <ServiceCard />
       </main>
     </div>
