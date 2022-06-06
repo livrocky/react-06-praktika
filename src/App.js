@@ -1,9 +1,16 @@
 import './App.css';
+import ServiceCard from './components/Card/ServiceCard';
+import SectionTitle from './components/ServiceSection/SectionTitle';
+// import Icon from './components/Card/Icon';
 
 function App() {
   return (
     <div className='App'>
-      <h1>Heloo again world</h1>
+      <main>
+        <SectionTitle title='OUR SERVICES' subtitle='The best services in the world' />
+        {/* <Icon icon='fa-plane' /> */}
+        <ServiceCard />
+      </main>
     </div>
   );
 }
