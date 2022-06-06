@@ -1,69 +1,76 @@
 :root {
-    --main-color: rgb(255, 68, 0);
-  }
-  .App{
-      max-width: 800px;
-
-        margin: 50px auto;
+  --main-color: rgb(255, 68, 0);
 }
- 
+.App {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
 body {
-    margin: 20px;
-    padding: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-background-color: rgb(249, 249, 249);
+  margin: 20px;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(249, 249, 249);
 }
 
-  .header-container{
-  }
-  .header-title{
-      color: var(--main-color);
-  }
-  .header-text {
-      color: grey;
-  }
-  .dark-mode{
-      float: right;
-  }
-  .name-container{
-      display: flex;
-      gap: 15px;
-  }
-  input{
-      padding:5px 10px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      border: 1px solid rgb(180, 174, 174);
-  }
- 
-  textarea{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px solid rgb(180, 174, 174);
+.header-title {
+  color: var(--main-color);
+}
+.header-text {
+  color: grey;
+}
 
-  }
-  .btn {
-      background-color: var(--main-color);
-      color: white;
-      padding: 7px 20px;
-      border: none;
-      letter-spacing: 1.5px;
-  }
+.name-container {
+  display: flex;
+  gap: 15px;
+}
+input {
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(180, 174, 174);
+}
+
+textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(180, 174, 174);
+}
+.btn {
+  background-color: var(--main-color);
+  color: white;
+  padding: 7px 20px;
+  border: none;
+  letter-spacing: 1.5px;
+}
 /* main */
-.main-container{
-    display: flex;
-gap: 50px;
+.main-container {
+  display: flex;
+  gap: 50px;
 }
-.login-container{
-    background-color: #fff;
-    padding: 15px;
+.login-container {
+  background-color: #fff;
+  padding: 15px;
+}
 
+.address-info-container {
+  background-color: #fff;
+  padding: 15px;
+}
+.name-container {
+  margin-top: 20px;
 }
 
-.address-info-container{
-    background-color: #fff;
-padding: 15px;
+/* success */
+
+.success-msg {
+  color: var(--main-color);
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.name-container{
-    margin-top: 20px;
+
+.dark {
+  color: snow;
+  background-color: black;
 }
+
