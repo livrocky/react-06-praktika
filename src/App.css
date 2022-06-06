@@ -1,0 +1,38 @@
+.card-container {
+  /* position: relative; */
+  /* width: 25rem; */
+  /* height: 20rem; */
+  position: relative;
+  width: 400px;
+}
+
+.house-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.house-image {
+  width: 25rem;
+  height: 14rem;
+}
+
+.house-title {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-style: italic;
+  top: 0px;
+  left: 0px;
+
+  position: absolute;
+
+  /* font-size: 20px; */
+
+  /* font-weight: bold; */
+
+  /* font-style: italic; */
+  /* top: 15px;
+  left: 30px; */
+}

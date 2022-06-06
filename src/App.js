@@ -1,9 +1,11 @@
 import './App.css';
+import { Card } from './components/House/HouseList';
 
 function App() {
   return (
     <div className='App'>
-      <h1>Heloo again world</h1>
+      <h1>Projects</h1>
+      <Card />
     </div>
   );
 }
